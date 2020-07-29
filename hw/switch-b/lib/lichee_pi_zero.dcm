@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP Lichee_Pi_Zero
+D Lichee Pi Zero Application Processor Module
+K Lichee Pi Zero Application Processor Module
+F https://github.com/Lichee-Pi/Lichee-Zero-Doc-us-english
+$ENDCMP
+#
+#End Doc Library

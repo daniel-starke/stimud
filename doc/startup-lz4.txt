@@ -1,0 +1,156 @@
+20:35:54.080 -> U-Boot SPL 2019.10 (Apr 04 2020 - 14:53:44 +0200)
+20:35:54.114 -> DRAM: 64 MiB
+20:35:54.114 -> Trying to boot from MMC1
+20:35:54.284 -> 
+20:35:54.284 -> 
+20:35:54.284 -> U-Boot 2019.10 (Apr 04 2020 - 14:53:44 +0200) Allwinner Technology
+20:35:54.284 -> 
+20:35:54.284 -> CPU:   Allwinner V3s (SUN8I 1681)
+20:35:54.284 -> Model: Lichee Pi Zero
+20:35:54.284 -> DRAM:  64 MiB
+20:35:54.794 -> MMC:   mmc@01c0f000: 0
+20:35:54.794 -> Loading Environment from FAT... *** Warning - bad CRC, using default environment
+20:35:54.828 -> 
+20:35:54.828 -> In:    serial@01c28000
+20:35:54.828 -> Out:   serial@01c28000
+20:35:54.828 -> Err:   serial@01c28000
+20:35:54.862 -> Net:   No ethernet found.
+20:35:54.862 -> starting USB...
+20:35:54.862 -> No working controllers found
+20:35:54.862 -> Hit any key to stop autoboot:  0 
+20:35:54.862 -> switch to partitions #0, OK
+20:35:54.896 -> mmc0 is current device
+20:35:54.896 -> Scanning mmc 0:1...
+20:35:54.896 -> Found U-Boot script /boot.scr
+20:35:54.896 -> 265 bytes read in 1 ms (258.8 KiB/s)
+20:35:54.896 -> ## Executing script at 41900000
+20:35:55.167 -> 5991616 bytes read in 271 ms (21.1 MiB/s)
+20:35:55.167 -> 8530 bytes read in 2 ms (4.1 MiB/s)
+20:35:55.167 -> ## Flattened Device Tree blob at 41800000
+20:35:55.201 ->    Booting using the fdt blob at 0x41800000
+20:35:55.201 ->    Loading Device Tree to 42dfa000, end 42dff151 ... OK
+20:35:55.201 -> 
+20:35:55.201 -> Starting kernel ...
+20:35:55.201 -> 
+20:35:55.677 -> [    0.000000] Booting Linux on physical CPU 0x0
+20:35:55.677 -> [    0.000000] Linux version 5.4.30 (Daniel Starke@STIMUD) (gcc version 9.3.0 (Buildroot 2020.02-dirty)) #3 SMP Sat Apr 4 19:29:22 CEST 2020
+20:35:55.677 -> [    0.000000] CPU: ARMv7 Processor [410fc075] revision 5 (ARMv7), cr=10c5387d
+20:35:55.677 -> [    0.000000] CPU: div instructions available: patching division code
+20:35:55.711 -> [    0.000000] CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+20:35:55.711 -> [    0.000000] OF: fdt: Machine model: Lichee Pi Zero
+20:35:55.711 -> [    0.000000] Memory policy: Data cache writealloc
+20:35:55.711 -> [    0.000000] cma: Reserved 16 MiB at 0x41c00000
+20:35:55.711 -> [    0.000000] psci: probing for conduit method from DT.
+20:35:55.711 -> [    0.000000] psci: Using PSCI v0.1 Function IDs from DT
+20:35:55.745 -> [    0.000000] percpu: Embedded 15 pages/cpu s30336 r8192 d22912 u61440
+20:35:55.745 -> [    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 16256
+20:35:55.745 -> [    0.000000] Kernel command line: console=ttyS0,115200 panic=5 console=tty0 rootwait root=/dev/ram0 earlyprintk rw
+20:35:55.745 -> [    0.000000] Dentry cache hash table entries: 8192 (order: 3, 32768 bytes, linear)
+20:35:55.745 -> [    0.000000] Inode-cache hash table entries: 4096 (order: 2, 16384 bytes, linear)
+20:35:55.779 -> [    0.000000] mem auto-init: stack:off, heap alloc:off, heap free:off
+20:35:55.779 -> [    0.000000] Memory: 37580K/65536K available (5120K kernel code, 361K rwdata, 1256K rodata, 3072K init, 223K bss, 11572K reserved, 16384K cma-reserved, 0K highmem)
+20:35:55.779 -> [    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+20:35:55.779 -> [    0.000000] rcu: Hierarchical RCU implementation.
+20:35:55.813 -> [    0.000000] rcu: 	RCU restricting CPUs from NR_CPUS=8 to nr_cpu_ids=1.
+20:35:55.813 -> [    0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 10 jiffies.
+20:35:55.813 -> [    0.000000] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=1
+20:35:55.813 -> [    0.000000] NR_IRQS: 16, nr_irqs: 16, preallocated irqs: 16
+20:35:55.813 -> [    0.000000] GIC: GICv2 detected, but range too small and irqchip.gicv2_force_probe not set
+20:35:55.847 -> [    0.000000] random: get_random_bytes called from start_kernel+0x2b0/0x454 with crng_init=0
+20:35:55.847 -> [    0.000000] arch_timer: cp15 timer(s) running at 24.00MHz (phys).
+20:35:55.847 -> [    0.000000] clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x588fe9dc0, max_idle_ns: 440795202592 ns
+20:35:55.847 -> [    0.000007] sched_clock: 56 bits at 24MHz, resolution 41ns, wraps every 4398046511097ns
+20:35:55.881 -> [    0.000019] Switching to timer-based delay loop, resolution 41ns
+20:35:55.881 -> [    0.000238] clocksource: timer: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 79635851949 ns
+20:35:55.881 -> [    0.000469] Console: colour dummy device 80x30
+20:35:55.881 -> [    0.000788] printk: console [tty0] enabled
+20:35:55.881 -> [    0.000845] Calibrating delay loop (skipped), value calculated using timer frequency.. 48.00 BogoMIPS (lpj=240000)
+20:35:55.915 -> [    0.000875] pid_max: default: 32768 minimum: 301
+20:35:55.915 -> [    0.001044] Mount-cache hash table entries: 1024 (order: 0, 4096 bytes, linear)
+20:35:55.915 -> [    0.001075] Mountpoint-cache hash table entries: 1024 (order: 0, 4096 bytes, linear)
+20:35:55.915 -> [    0.001989] CPU: Testing write buffer coherency: ok
+20:35:55.915 -> [    0.002549] /cpus/cpu@0 missing clock-frequency property
+20:35:55.915 -> [    0.002596] CPU0: thread -1, cpu 0, socket 0, mpidr 80000000
+20:35:55.949 -> [    0.003429] Setting up static identity map for 0x40100000 - 0x40100060
+20:35:55.949 -> [    0.003681] rcu: Hierarchical SRCU implementation.
+20:35:55.949 -> [    0.004187] smp: Bringing up secondary CPUs ...
+20:35:55.949 -> [    0.004230] smp: Brought up 1 node, 1 CPU
+20:35:55.949 -> [    0.004246] SMP: Total of 1 processors activated (48.00 BogoMIPS).
+20:35:55.949 -> [    0.004260] CPU: All CPU(s) started in HYP mode.
+20:35:55.949 -> [    0.004271] CPU: Virtualization extensions available.
+20:35:55.983 -> [    0.004913] devtmpfs: initialized
+20:35:55.983 -> [    0.007721] VFP support v0.3: implementor 41 architecture 2 part 30 variant 7 rev 5
+20:35:55.983 -> [    0.008108] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+20:35:55.983 -> [    0.008164] futex hash table entries: 256 (order: 2, 16384 bytes, linear)
+20:35:55.983 -> [    0.009000] pinctrl core: initialized pinctrl subsystem
+20:35:56.016 -> [    0.010461] NET: Registered protocol family 16
+20:35:56.016 -> [    0.011609] DMA: preallocated 256 KiB pool for atomic coherent allocations
+20:35:56.016 -> [    0.012829] hw-breakpoint: found 5 (+1 reserved) breakpoint and 4 watchpoint registers.
+20:35:56.016 -> [    0.012878] hw-breakpoint: maximum watchpoint size is 8 bytes.
+20:35:56.016 -> [    0.025141] SCSI subsystem initialized
+20:35:56.016 -> [    0.025793] usbcore: registered new interface driver usbfs
+20:35:56.050 -> [    0.025883] usbcore: registered new interface driver hub
+20:35:56.050 -> [    0.026014] usbcore: registered new device driver usb
+20:35:56.050 -> [    0.026267] pps_core: LinuxPPS API ver. 1 registered
+20:35:56.050 -> [    0.026297] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+20:35:56.050 -> [    0.026336] PTP clock support registered
+20:35:56.050 -> [    0.027736] clocksource: Switched to clocksource arch_sys_counter
+20:35:56.084 -> [    0.039245] thermal_sys: Registered thermal governor 'step_wise'
+20:35:56.084 -> [    0.039557] NET: Registered protocol family 1
+20:35:56.084 -> [    0.199560] workingset: timestamp_bits=30 max_order=14 bucket_order=0
+20:35:56.084 -> [    0.205980] ntfs: driver 2.1.32 [Flags: R/W].
+20:35:56.084 -> [    0.206441] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 248)
+20:35:56.084 -> [    0.206479] io scheduler mq-deadline registered
+20:35:56.117 -> [    0.206494] io scheduler kyber registered
+20:35:56.117 -> [    0.207408] sun4i-usb-phy 1c19400.phy: Couldn't request ID GPIO
+20:35:56.117 -> [    0.211678] sun8i-v3s-pinctrl 1c20800.pinctrl: initialized sunXi PIO driver
+20:35:56.117 -> [    0.277582] Serial: 8250/16550 driver, 8 ports, IRQ sharing disabled
+20:35:56.117 -> [    0.280095] sun8i-v3s-pinctrl 1c20800.pinctrl: 1c20800.pinctrl supply vcc-pb not found, using dummy regulator
+20:35:56.151 -> [    0.281283] printk: console [ttyS0] disabled
+20:35:56.151 -> [    0.301618] 1c28000.serial: ttyS0 at MMIO 0x1c28000 (irq = 31, base_baud = 1500000) is a U6_16550A
+20:35:56.151 -> [    0.787356] printk: console [ttyS0] enabled
+20:35:56.151 -> [    0.792957] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+20:35:56.151 -> [    0.799594] ehci-platform: EHCI generic platform driver
+20:35:56.185 -> [    0.804939] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+20:35:56.185 -> [    0.811211] ohci-platform: OHCI generic platform driver
+20:35:56.185 -> [    0.818005] sun6i-rtc 1c20400.rtc: registered as rtc0
+20:35:56.185 -> [    0.823094] sun6i-rtc 1c20400.rtc: RTC enabled
+20:35:56.185 -> [    0.827848] i2c /dev entries driver
+20:35:56.185 -> [    0.832307] sunxi-wdt 1c20ca0.watchdog: Watchdog enabled (timeout=16 sec, nowayout=0)
+20:35:56.218 -> [    0.840951] sun8i-v3s-pinctrl 1c20800.pinctrl: 1c20800.pinctrl supply vcc-pf not found, using dummy regulator
+20:35:56.252 -> [    0.877674] sunxi-mmc 1c0f000.mmc: initialized, max. request size: 16384 KB
+20:35:56.252 -> [    0.885168] sun8i-v3s-pinctrl 1c20800.pinctrl: 1c20800.pinctrl supply vcc-pg not found, using dummy regulator
+20:35:56.252 -> [    0.896355] usbcore: registered new interface driver usbhid
+20:35:56.252 -> [    0.902048] usbhid: USB HID core driver
+20:35:56.286 -> [    0.906274] NET: Registered protocol family 17
+20:35:56.286 -> [    0.910923] Registering SWP/SWPB emulation handler
+20:35:56.286 -> [    0.925013] usb_phy_generic usb_phy_generic.1.auto: usb_phy_generic.1.auto supply vcc not found, using dummy regulator
+20:35:56.286 -> [    0.936743] musb-hdrc musb-hdrc.2.auto: MUSB HDRC host driver
+20:35:56.322 -> [    0.942659] musb-hdrc musb-hdrc.2.auto: new USB bus registered, assigned bus number 1
+20:35:56.322 -> [    0.952108] hub 1-0:1.0: USB hub found
+20:35:56.322 -> [    0.956042] hub 1-0:1.0: 1 port detected
+20:35:56.322 -> [    0.961830] sun6i-rtc 1c20400.rtc: setting system clock to 1970-01-01T05:16:33 UTC (18993)
+20:35:56.356 -> [    0.974900] Freeing unused kernel memory: 3072K
+20:35:56.356 -> [    0.979765] Run /init as init process
+20:35:56.390 -> [    1.015828] mmc0: host does not support reading read-only switch, assuming write-enable
+20:35:56.390 -> [    1.032798] mmc0: new high speed SDHC card at address aaaa
+20:35:56.424 -> [    1.043829] mmcblk0: mmc0:aaaa SC16G 14.8 GiB 
+20:35:56.424 -> [    1.062177]  mmcblk0: p1 p2
+20:35:56.560 -> [    1.186648] random: dd: uninitialized urandom read (512 bytes read)
+20:35:56.594 -> [    1.240818] random: fast init done
+20:35:56.935 -> [    1.557995] sun8i-v3s-pinctrl 1c20800.pinctrl: 1c20800.pinctrl supply vcc-pg not found, using dummy regulator
+20:35:57.003 -> [    1.646763] Mass Storage Function, version: 2009/09/11
+20:35:57.003 -> [    1.652130] LUN: removable file: (no medium)
+20:35:57.037 -> [    1.656631] LUN: file: /dev/mmcblk0
+20:35:57.037 -> [    1.660207] Number of LUNs=1
+20:35:57.037 -> [    1.664214] g_mass_storage gadget: Mass Storage Gadget, version: 2009/09/11
+20:35:57.037 -> [    1.671332] g_mass_storage gadget: userspace failed to provide iSerialNumber
+20:35:57.037 -> [    1.678433] g_mass_storage gadget: g_mass_storage ready
+20:35:57.684 -> 
+
+20:35:57.684 -> Welcome to STIMUD
+20:35:57.684 -> 
+stimud login: [    2.323499] g_mass_storage gadget: high-speed config #1: Linux File-Backed Storage
+20:35:59.759 -> [    4.379457] random: crng init done
+20:36:26.569 -> [   31.207724] vcc3v0: disabling
+20:36:26.569 -> [   31.210741] vcc5v0: disabling

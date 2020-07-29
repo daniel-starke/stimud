@@ -1,0 +1,41 @@
+offsets for 3D view in KiCAD:
+
+480370001.step
+X: -90 deg
+Y: 0 deg
+Z: 0 deg
+X: 0 in
+Y: -0.3660 in
+Z: 0.0320 in
+
+USB-A_Plug.step
+X: 0 deg
+Y: 0 deg
+Z: 0 deg
+X: 0.1378 in
+Y: 0.0472 in
+Z: -0.0140 in
+
+SC-1111.step
+X: 90 deg
+Y: 180 deg
+Z: 0 deg
+X: 0 in
+Y: 0.1810 in
+Z: 0.2 in
+
+RV4A-16R-V-B.step
+X: 0 deg
+Y: 0 deg
+Z: 90 deg
+X: -0.1920 in
+Y: 0.1810 in
+Z: 0.0120 in
+
+TF-01A.step
+X: 0 deg
+Y: 0 deg
+Z: -90 deg
+X: 0.2950 in
+Y: -0.3750 in
+Z: -0.0010 in
