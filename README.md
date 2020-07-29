@@ -83,6 +83,8 @@ Needed parts:
 - 1x [33kOhm 0603 SMD resistor](https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_UNI-ROYAL-Uniroyal-Elec-0603WAF3302T5E_C4216.html) (optional)
 - 6x [100nF 0603 SMD capacitor](https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_IHHEC-HOLY-STONE-ENTERPRISE-CO-LTD-C0603X104K050T_C187860.html)
 - 1x [self adhesive 3mm thick foam pad](https://www.aliexpress.com/item/4000450236527.html)
+- 3x [M3 nut](https://www.aliexpress.com/item/32981886856.html)
+- 3x [12mm M3 screw](https://www.aliexpress.com/item/32981886856.html)
 - 1x [STIMUD PCB Rev. B](hw/switch-b/gerber)
 - 1x [STIMUD case](hw/switch-b/Case.FCStd)
 
