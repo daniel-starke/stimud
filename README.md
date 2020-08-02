@@ -10,7 +10,7 @@ Features
 - small and cheap design
 - up to 16 different USB images in one device
 - flexible storage capacity options by using standard microSD cards as backbone
-- moderate speed: 6.36 MByte/s write, 17.2 MByte/s read ([tested](doc/h2testw-stimud.txt) with SunDisk Ultra 16GB)
+- moderate speed: 6.36 MByte/s write, 17.2 MByte/s read ([tested](doc/h2testw-stimud.txt) with SanDisk Ultra 16GB)
 - fast USB startup time of [~3 seconds](doc/startup-lz4.txt)
 - as little as 0.7W energy consumption
 - status and activity LED
@@ -134,7 +134,7 @@ Note that the backbone filesystem option is only used for initial format. Any of
 Images can be copied as image files or created for example with the following Linux command:  
 
 ```shell
-for i in 0 1 2 3 4 5 6 7 8 9 A B C D E; do dd if=/dev/zero of=$i.img bs=1048576 count=1008; mkfs -t vfat $i.img; done
+for i in 0 1 2 3 4 5 6 7 8 9 A B C D E; do dd if=/dev/zero of=$i.img bs=1048576 count=1008; mkfs -t vfat -n $i $i.img; done
 ```
 
 This creates the images 0.img, 1.img, 2.img, 3.img, 4.img, 5.img, 6.img, 7.img, 8.img, 9.img, A.img, B.img, C.img, D.img and E.img in the current directory with a size of 1018MB each formatted with FAT32.  
@@ -174,6 +174,24 @@ LED States
 Note that the LEDs in revision A are also connected to the rotary switch. Set it to position `0` or
 `F` depending on whether the switch uses real or complementary code to see all LEDs. Other positions
 may disable all or some LEDs. Revision C fixes this issue by using different pins for the rotary switch.
+
+Files
+=====
+
+|Name                             |Meaning
+|---------------------------------|-----------------------------------------------------
+|build.sh                         |Shell script to build the STIMUD SD card images.
+|board/boot.cmd                   |U-Boot boot script.
+|board/genimage.cfg               |Linux kernel specific image generation configuration.
+|board/stimud.dts                 |U-Boot specific device tree reference.
+|configs/buildroot.config         |Buildroot specific build configuration.
+|configs/busybox-fragments.config |Busybox specific build configuration fragments.
+|configs/linux.config             |Linux kernel specific build configuration.
+|configs/uboot.config             |U-Boot specific build configuration.
+|src/start.sh                     |Script loaded at STIMUD start-up.
+|src/stimud.cfg                   |STIMUD configuration template.
+|src/stimud.sh                    |Script with the actual STIMUD function.
+|src/stimud-gpio.c                |Application to control the Allwinner V3s GPIOs.
 
 License
 =======
